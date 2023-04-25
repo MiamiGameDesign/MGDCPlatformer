@@ -4,12 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+
 public class GoblinController : MonoBehaviour
 {
     public GameObject cameraDock;
     public bool onGround;
     public Image image;
     public TextMeshProUGUI youwin;
+    public AudioClip jump;
+    public AudioSource a;
 
     Vector3 lastPos;
     // Start is called before the first frame update
@@ -64,7 +67,13 @@ public class GoblinController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        Vector3 vel = transform.forward  * 15;
+        vel.y = GetComponent<Rigidbody>().velocity.y;
+        if (Input.GetMouseButton(0) && onGround)
+        {
+            a.PlayOneShot(jump);
+            vel.y = 15;  
+        }
         if (transform.position.x > 76 && transform.position.x < 85 && transform.position.z < -215 && transform.position.z > -220 && transform.position.y > 16)
         {
 
@@ -79,12 +88,8 @@ public class GoblinController : MonoBehaviour
         cameraDock.transform.Rotate(-Input.GetAxis("Mouse Y"), 0, 0);
         cameraDock.transform.eulerAngles = new Vector3(cameraDock.transform.eulerAngles.x, cameraDock.transform.eulerAngles.y, 0);
         transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
-        Vector3 vel = transform.forward  * 15;
-        vel.y = GetComponent<Rigidbody>().velocity.y;
-        if (Input.GetMouseButton(0) && onGround)
-        {
-            vel.y = 15;
-        }
+        
+       
             GetComponent<Rigidbody>().velocity = vel;
     }
 }

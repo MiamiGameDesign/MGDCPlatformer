@@ -6,18 +6,14 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     public GameObject textBox;
-    float timer;
+    float startTime, timeElapsed;
     void Start()
     {
-        StartCoroutine(Sequence());
+        startTime = Time.time;
     }
-    IEnumerator Sequence()
-    {
-        while (true)
-        {
-            timer += Time.deltaTime;
-            textBox.GetComponent<Text>().text = "Time: " + (Mathf.Round(timer * 10) / 10);
-            yield return new WaitForSeconds(0.1f);
-        }
+    void Update() {
+        if (Time.timeScale != 0)
+            timeElapsed = (Time.time - startTime) * Time.timeScale;
+            textBox.GetComponent<Text>().text = "Time: " + (Mathf.Round(timeElapsed * 100f) / 100f) % 60;
     }
 }
