@@ -69,7 +69,7 @@ public class GoblinController : MonoBehaviour
     {
         Vector3 vel = transform.forward  * 15;
         vel.y = GetComponent<Rigidbody>().velocity.y;
-        if (Input.GetMouseButton(0) && onGround)
+        if (Input.GetMouseButtonDown(0) && onGround)
         {
             a.PlayOneShot(jump);
             vel.y = 15;  

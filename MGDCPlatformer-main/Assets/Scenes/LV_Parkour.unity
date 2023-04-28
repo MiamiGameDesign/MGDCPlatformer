@@ -3851,6 +3851,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strength: 30
+  jump: {fileID: 8300000, guid: c99f195a52a88de4289915d3589f9c24, type: 3}
+  a: {fileID: 1171656112}
 --- !u!65 &603296458
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4670,6 +4672,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3361934475848498842, guid: b35c4fa1d459e464582feabfcf36554e, type: 3}
+      propertyPath: a
+      value: 
+      objectReference: {fileID: 1171656112}
+    - target: {fileID: 3361934475848498842, guid: b35c4fa1d459e464582feabfcf36554e, type: 3}
+      propertyPath: jump
+      value: 
+      objectReference: {fileID: 8300000, guid: c99f195a52a88de4289915d3589f9c24, type: 3}
+    - target: {fileID: 3361934475848498842, guid: b35c4fa1d459e464582feabfcf36554e, type: 3}
       propertyPath: image
       value: 
       objectReference: {fileID: 1446716335}
@@ -5390,7 +5400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.9411765, g: 0.11764706, b: 0.16470589, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5710,6 +5720,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strength: 30
+  jump: {fileID: 8300000, guid: c99f195a52a88de4289915d3589f9c24, type: 3}
+  a: {fileID: 1171656112}
 --- !u!65 &1637525971
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6388,6 +6400,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strength: 30
+  jump: {fileID: 8300000, guid: c99f195a52a88de4289915d3589f9c24, type: 3}
+  a: {fileID: 1171656112}
 --- !u!1 &1958144630 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 281855664364225751, guid: 461e88bf76dc56e4e9c96c5f7d809032, type: 3}
