@@ -11,15 +11,4 @@ public class MenuScript : MonoBehaviour
         SceneManager.LoadScene("LV_Parkour");
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
