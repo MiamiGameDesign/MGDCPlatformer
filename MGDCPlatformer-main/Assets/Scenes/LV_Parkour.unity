@@ -4239,7 +4239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strength: 30
-  jump: {fileID: 8300000, guid: c99f195a52a88de4289915d3589f9c24, type: 3}
+  jump: {fileID: 8300000, guid: 1e6245004c31384418c41bf92f6e9dba, type: 3}
   a: {fileID: 1171656112}
 --- !u!65 &603296458
 BoxCollider:
@@ -4642,9 +4642,9 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 0.05}
+  m_Size: {x: 0.1, y: 1, z: 0.05}
   m_Center: {x: 0, y: -0.5, z: 0}
---- !u!114 &666163443
+--- !u!114 &666163447
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4656,6 +4656,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a35726bb6abd564a8bca4f108f4d91c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  image: {fileID: 1446716335}
+  youwin: {fileID: 682371920}
 --- !u!1 &681804484
 GameObject:
   m_ObjectHideFlags: 0
@@ -6227,7 +6229,7 @@ PrefabInstance:
     - target: {fileID: 3361934475848498842, guid: b35c4fa1d459e464582feabfcf36554e, type: 3}
       propertyPath: jump
       value: 
-      objectReference: {fileID: 8300000, guid: c99f195a52a88de4289915d3589f9c24, type: 3}
+      objectReference: {fileID: 8300000, guid: 1e6245004c31384418c41bf92f6e9dba, type: 3}
     - target: {fileID: 3361934475848498842, guid: b35c4fa1d459e464582feabfcf36554e, type: 3}
       propertyPath: image
       value: 
@@ -6861,7 +6863,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh265528
+  m_Name: pb_Mesh23956
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -7141,7 +7143,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_SizeDelta: {x: 3840, y: 2160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1446716335
 MonoBehaviour:
@@ -7835,7 +7837,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strength: 30
-  jump: {fileID: 8300000, guid: c99f195a52a88de4289915d3589f9c24, type: 3}
+  jump: {fileID: 8300000, guid: 1e6245004c31384418c41bf92f6e9dba, type: 3}
   a: {fileID: 1171656112}
 --- !u!65 &1637525971
 BoxCollider:
@@ -8208,7 +8210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strength: 32
-  jump: {fileID: 8300000, guid: c99f195a52a88de4289915d3589f9c24, type: 3}
+  jump: {fileID: 8300000, guid: 1e6245004c31384418c41bf92f6e9dba, type: 3}
   a: {fileID: 1171656112}
 --- !u!65 &1700404352
 BoxCollider:
@@ -8944,7 +8946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strength: 30
-  jump: {fileID: 8300000, guid: c99f195a52a88de4289915d3589f9c24, type: 3}
+  jump: {fileID: 8300000, guid: 1e6245004c31384418c41bf92f6e9dba, type: 3}
   a: {fileID: 1171656112}
 --- !u!1 &1945759494
 GameObject:

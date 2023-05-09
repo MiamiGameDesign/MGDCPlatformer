@@ -9,8 +9,6 @@ public class GoblinController : MonoBehaviour
 {
     public GameObject cameraDock;
     public bool onGround;
-    public Image image;
-    public TextMeshProUGUI youwin;
     public AudioClip jump;
     public AudioSource a;
 
@@ -74,13 +72,11 @@ public class GoblinController : MonoBehaviour
             a.PlayOneShot(jump);
             vel.y = 15;  
         }
-        if (transform.position.x > 76 && transform.position.x < 85 && transform.position.z < -215 && transform.position.z > -220 && transform.position.y > 16)
+/*        if (transform.position.x > 76 && transform.position.x < 85 && transform.position.z < -215 && transform.position.z > -220 && transform.position.y > 16)
         {
 
-            image.enabled = true;
-            youwin.enabled = true;
-            Time.timeScale = 0;
-        }
+            
+        }*/
         if (Input.GetKey(KeyCode.Escape))
             Application.Quit();
         onGround = Physics.Raycast(transform.position, Vector3.down, 1.6f);
